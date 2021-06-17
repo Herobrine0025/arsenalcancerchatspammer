@@ -1,4 +1,4 @@
-local killsays = {
+local toxic = {
     [1] = " AHAHAHHAAH (◣◢)",
     [2] = "THIS IS UNDERGROUND, BITCH╰╯",
     [3] = "ahhahaha, suck noob (っ◔◡◔)っ .!.",
@@ -30,8 +30,8 @@ local killsays = {
  
  }
  while true do
-     for i, bruh in pairs(killsays) do
+     for i, bruh in pairs(toxic) do
         wait()
-        game:GetService("ReplicatedStorage").Events.PlayerChatted:FireServer(killsays[i],"All")
+        game:GetService("ReplicatedStorage").Events.PlayerChatted:FireServer(toxic[i],"All")
      end
 end
